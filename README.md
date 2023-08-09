@@ -69,7 +69,10 @@ Got an idea? Found a bug? Feel free to open an issue or make a pull request. All
 
 ## 😃 About the Author
 
-Hey, I'm [Your Name], the creator of this plugin! I love Obsidian, and I love making tools that make people's lives easier. If you have any questions or just want to say hi, feel free to reach out!
+Hey, I'm Alex, the creator of this plugin! I love Obsidian, and I love making tools that make people's lives easier. If you have any questions or just want to say hi, feel free to reach out!
+Also, if you want to buy me a beer, here is the link below!
+
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="alexisguirr" data-color="#FFDD00" data-emoji="🍺"  data-font="Cookie" data-text="Buy me a beer" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
 
 ## 📜 License
 
