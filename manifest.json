@@ -1,0 +1,9 @@
+{
+  "id": "template-search-plugin",
+  "name": "Search Templates Library",
+  "version": "0.1.0",
+  "description": "Allows you to save search templates for future re-use",
+  "author": "PentchPentch",
+  "minAppVersion": "0.12.0",
+  "isDesktopOnly": false
+}
