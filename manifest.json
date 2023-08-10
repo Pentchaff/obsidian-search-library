@@ -1,5 +1,5 @@
 {
-  "id": "template-search-plugin",
+  "id": "template-search-library",
   "name": "Search Templates Library",
   "version": "1.0.0",
   "description": "Allows you to save search templates for future re-use",
