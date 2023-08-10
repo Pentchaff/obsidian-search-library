@@ -174,7 +174,7 @@ class TemplateSearchSettingTab extends obsidian.PluginSettingTab {
 
     containerEl.empty();
 
-    new obsidianSetting(containerEl)
+    new obsidian.Setting(containerEl)
       .setName('Search Templates Folder')
       .setDesc('Select the folder containing your search templates')
       .addButton(button => {
