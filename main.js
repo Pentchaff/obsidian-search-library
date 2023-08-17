@@ -88,11 +88,16 @@ class TemplateSearchPlugin extends obsidian.Plugin {
       callback: this.freeSearch.bind(this),
     });
 
-    this.addCommand({
-      id: 'template-search',
-      name: 'Template-Enabled Search',
-      callback: this.templateSearch.bind(this),
-    });
+    
+    if (this.app.plugins.plugins.quickadd){
+      this.addCommand({
+        id: 'template-search',
+        name: 'Template-Enabled Search',
+        callback: this.templateSearch.bind(this),
+      });
+    } else{
+      new Notice("QuickAdd Community plugin appears not to be installed / enabled on your device. Please install QuickAdd, enable it, disable Search Library plugin and re-enable it to be able to use template search")
+    }
 
     this.addSettingTab(new TemplateSearchSettingTab(this.app, this));
   }
@@ -175,10 +180,10 @@ class TemplateSearchSettingTab extends obsidian.PluginSettingTab {
     containerEl.empty();
 
     new obsidian.Setting(containerEl)
-      .setName('Search Templates Folder')
+      .setName('Search templates folder')
       .setDesc('Select the folder containing your search templates')
       .addButton(button => {
-        button.setButtonText(this.plugin.settings.templateFolder || 'Select Folder')
+        button.setButtonText(this.plugin.settings.templateFolder || 'Select folder')
           .setCta()
           .onClick(() => {
             new FolderSuggester(this.app, (folder) => {
